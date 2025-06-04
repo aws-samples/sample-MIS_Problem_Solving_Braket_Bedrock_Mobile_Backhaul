@@ -128,7 +128,7 @@ def quantum_simulator_execute(nodes,mode):
      most_frequent_regs = occurence_count.most_common(show_n_result)
      return  most_frequent_regs
     
-    if mode == 'Qera':
+    if mode == 'QuEra':
      
      # Select the QPU device
      # aquila_qpu = AwsDevice(quantumComputer)
