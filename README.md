@@ -64,20 +64,21 @@ This code must be used as companion of the blog ********
     cd bedrock_braket_mis
     ```
 
-2. Configure the python virtual environment, activate it & install project dependencies. *Note: each POC has it's own dependencies & dependency management.*
+3. Log in your AWS Account
+
+3. Configure the python virtual environment, activate it & install project dependencies. *Note: each POC has it's own dependencies & dependency management.*
     ```zsh
     python3 -m venv .env
     source .env/bin/activate
     pip install -r requirements.txt
     ```
 
-3. Update ".env.local" file with your profile name and login in AWS assuming this profile. Update also foundation
+4. Update ".env.local" file with your profile name and login in AWS assuming this profile. Update also foundation
 
      ```zsh
     profile_name=<AWS_CLI_PROFILE_NAME>
     
     ```
-4. Log in your AWS Account
 
 5. Execute `setup.py` program to create the agent and access permisions to Bedrock and Braket
     
