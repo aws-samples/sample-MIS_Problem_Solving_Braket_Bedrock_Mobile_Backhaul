@@ -21,7 +21,7 @@ import os
 
 load_dotenv(dotenv_path='env.local')
 profile_name = os.getenv("profile_name")
-session = boto3.Session(profile_name=profile_name)
+session = boto3.Session(profile_name=profile_name,region_name='us-east-1'))
 aws_session = AwsSession(boto_session=session)
 device_qpu = AwsDevice(Devices.QuEra.Aquila, aws_session=aws_session)
 # quantumComputer = os.getenv('quantumComputer')
